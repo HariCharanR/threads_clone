@@ -20,7 +20,6 @@ export async function createThread({
 }: Params) {
   try {
     connectToDb();
-
     const createdThread = await Thread.create({
       text,
       author,
