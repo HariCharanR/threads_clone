@@ -44,7 +44,7 @@ async function ThreadDetails({params} : {params : {id : string}}) {
 
         <div className="mt-10">
             {thread.children.map((comment:any) => (
-                <div>
+                
                     <ThreadCard
             key={comment._id}
             id={comment._id}
@@ -58,7 +58,7 @@ async function ThreadDetails({params} : {params : {id : string}}) {
             isComment={true}
          />
 
-                </div>
+                
             )) }
         </div>
     </section>
